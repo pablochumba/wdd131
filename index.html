@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Chumba - WDD 131</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Pablo Nicolas Chumba Perez - Biography, Portfolio, Web Development Resources">
+    <title>WDD 131: Dynamic Web Fundamentals - Pablo Nicolas Chumba Perez</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals page for Pablo Nicolas Chumba Perez with biography, project links, and web development resources.">
+    <meta name="author" content="Pablo Nicolas Chumba Perez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/pablochumba">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/16?lang=eng&amp;id=p4#p4">Scripture</a></li>
+                <li><a href="#finalProject">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/pablochumba">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/16?lang=eng&id=p4#p4">Scripture</a></li>
-            <li><a href="#finalProject">Final Project</a></li>
-        </ul>
-    </nav>
     <main>
-        <h1>Pablo Chumba</h1>
+        <h1>Pablo Nicolas Chumba Perez</h1>
         <section class="card">
-            <h2 id="aboutMe">About me</h2>
-            <span id="currentyear"></span>
-            <p> I am a farm boy</p>
-            <img class="card-img" src="images/profile.webp" alt="Pablo Chumba" width="200" height="200">
+            <h2>About Me</h2>
+            <div class="card-content about-content">
+                <p>I am Pablo Chumba from Rancagua, Chile. I enjoy learning web development, building practical projects, and improving my technical skills through consistent practice and coursework.</p>
+                <img class="card-img" src="images/profile.webp" alt="Pablo Chumba" width="200" height="200">
+            </div>
         </section>
-        <section class="card">
+        <section class="card" id="finalProject">
             <h2>Web Dev Resources</h2>
-            <p>No idea honestly</p>
+            <div class="card-content">
+                <p>These are some of the sites I use to study and practice front-end development concepts.</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; Pablo Chumba - Rancagua, Chile - All rights reserved.</p>
+        <p>&copy; <span id="currentyear"></span> Pablo Chumba - Rancagua, Chile - All rights reserved.</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
+</html>
