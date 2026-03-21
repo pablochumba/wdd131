@@ -7,7 +7,15 @@
     --brand: #7a3b1c;
     --brand-dark: #4f2410;
     --accent: #c98d47;
-    --shadow: 0 18px 40px rgba(65, 39, 22, 0.12);
+    --light-text: #fff8f0;
+    --header-glow: #fff8ef1f;
+    --header-accent: #c98d4724;
+    --menu-border: #fff8f047;
+    --menu-surface: #fff8f014;
+    --nav-hover: #c98d473d;
+    --card-border: #7a3b1c24;
+    --shadow: 0 18px 40px #4127161f;
+    --header-shadow: 0 10px 30px #0000002e;
 }
 
 * {
@@ -35,10 +43,10 @@ header {
     top: 0;
     z-index: 10;
     background:
-        linear-gradient(135deg, rgba(255, 248, 239, 0.12), rgba(201, 141, 71, 0.14)),
+        linear-gradient(135deg, var(--header-glow), var(--header-accent)),
         var(--brand-dark);
-    color: #fff8f0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    color: var(--light-text);
+    box-shadow: var(--header-shadow);
 }
 
 .header-top {
@@ -57,9 +65,9 @@ header {
 }
 
 #menuButton {
-    border: 1px solid rgba(255, 248, 240, 0.28);
+    border: 1px solid var(--menu-border);
     border-radius: 0.75rem;
-    background: rgba(255, 248, 240, 0.08);
+    background: var(--menu-surface);
     color: inherit;
     cursor: pointer;
     padding: 0.55rem 0.8rem;
@@ -85,7 +93,7 @@ nav {
     display: none;
     padding: 0.9rem 1rem;
     border-radius: 0.85rem;
-    color: #fff8f0;
+    color: var(--light-text);
     font-weight: 500;
     text-align: center;
     text-decoration: none;
@@ -94,7 +102,7 @@ nav {
 
 .navigation a:hover,
 .navigation a:focus-visible {
-    background: rgba(201, 141, 71, 0.24);
+    background: var(--nav-hover);
     transform: translateY(-2px);
     outline: none;
 }
@@ -126,7 +134,7 @@ h1 {
 figure {
     margin: 0;
     overflow: hidden;
-    border: 1px solid rgba(122, 59, 28, 0.14);
+    border: 1px solid var(--card-border);
     border-radius: 1.2rem;
     background: var(--surface);
     box-shadow: var(--shadow);
@@ -148,7 +156,7 @@ figcaption {
 footer {
     padding: 1.5rem 1rem 2rem;
     background: var(--brand-dark);
-    color: #fff8f0;
+    color: var(--light-text);
     text-align: center;
 }
 
