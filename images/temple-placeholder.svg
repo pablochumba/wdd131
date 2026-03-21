@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Temple placeholder illustration</title>
+  <desc id="desc">A stylized temple silhouette with mountains and sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8e8c8"/>
+      <stop offset="100%" stop-color="#f4c98d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <path d="M0 182 62 132 121 171 179 119 234 167 298 109 358 153 400 127V260H0Z" fill="#d9ae6f" opacity=".7"/>
+  <path d="M0 209 55 188 110 202 160 150 223 191 289 173 342 193 400 165V260H0Z" fill="#bb8c53" opacity=".9"/>
+  <rect x="118" y="118" width="164" height="94" rx="6" fill="#fff9ef"/>
+  <rect x="132" y="102" width="136" height="16" rx="3" fill="#7a3b1c"/>
+  <path d="M200 66 128 102h144Z" fill="#4f2410"/>
+  <rect x="192" y="76" width="16" height="26" fill="#4f2410"/>
+  <rect x="145" y="134" width="18" height="78" fill="#d8c3a8"/>
+  <rect x="191" y="134" width="18" height="78" fill="#d8c3a8"/>
+  <rect x="237" y="134" width="18" height="78" fill="#d8c3a8"/>
+  <rect x="172" y="150" width="56" height="62" fill="#7a3b1c"/>
+  <circle cx="200" cy="42" r="10" fill="#fff9ef"/>
+  <path d="m200 26 3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" fill="#f4c98d"/>
+</svg>
