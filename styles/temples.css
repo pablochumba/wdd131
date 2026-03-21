@@ -75,9 +75,12 @@ header {
     content: "\00d7";
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
+}
+
+.navigation {
     padding: 0 1rem 1rem;
 }
 
