@@ -1,0 +1,207 @@
+:root {
+    --page-bg: #f4efe4;
+    --surface: rgba(255, 251, 245, 0.92);
+    --surface-strong: rgba(255, 248, 240, 0.97);
+    --text: #13293d;
+    --muted: #355070;
+    --brand: #c1121f;
+    --brand-deep: #780000;
+    --accent: #fdf0d5;
+    --accent-strong: #fcbf49;
+    --line: rgba(19, 41, 61, 0.14);
+    --shadow: 0 18px 45px rgba(19, 41, 61, 0.18);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background:
+        linear-gradient(180deg, rgba(253, 240, 213, 0.88), rgba(244, 239, 228, 0.96)),
+        var(--page-bg);
+    color: var(--text);
+    font-family: "Source Sans 3", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-header {
+    padding: 2.5rem 1rem 2rem;
+    background:
+        linear-gradient(135deg, rgba(120, 0, 0, 0.9), rgba(193, 18, 31, 0.92)),
+        var(--brand);
+    color: white;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-size: clamp(2.4rem, 7vw, 4.3rem);
+    letter-spacing: 0.05em;
+}
+
+.site-header p {
+    width: min(42rem, calc(100% - 1rem));
+    margin: 0.75rem auto 0;
+    font-size: 1.08rem;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+}
+
+.hero img {
+    min-height: 240px;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.content-grid {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.info-card {
+    padding: 1.5rem 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    background: var(--surface-strong);
+    box-shadow: var(--shadow);
+}
+
+.info-card h2 {
+    margin: 0 0 1rem;
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    color: var(--brand-deep);
+    text-align: center;
+}
+
+.weather-icon {
+    margin: 0 auto 1rem;
+}
+
+dl {
+    margin: 0;
+}
+
+dl div {
+    padding: 0.45rem 0;
+    display: grid;
+    grid-template-columns: minmax(120px, 145px) 1fr;
+    gap: 0.35rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+}
+
+dl div:last-child {
+    border-bottom: none;
+}
+
+dt {
+    font-weight: 700;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+}
+
+footer {
+    padding: 1.4rem 1rem 1.8rem;
+    background: var(--text);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+@media screen and (min-width: 700px) {
+    .site-header {
+        padding: 3rem 1rem 2.5rem;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+    }
+
+    .info-card {
+        padding: 1.75rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        position: relative;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(19, 41, 61, 0.06));
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(19, 41, 61, 0.05), rgba(19, 41, 61, 0.36));
+        pointer-events: none;
+    }
+
+    .hero img {
+        min-height: 620px;
+        max-height: 720px;
+    }
+
+    .content-grid {
+        position: relative;
+        margin-top: -31rem;
+        padding: 0 1rem 2rem;
+        grid-template-columns: 320px 320px;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .info-card {
+        background: var(--surface);
+        backdrop-filter: blur(6px);
+    }
+
+    .data-card {
+        align-self: start;
+    }
+
+    .weather-card {
+        align-self: end;
+    }
+
+    .weather-card h2::after {
+        content: " \26C5";
+        color: var(--accent-strong);
+        font-size: 0.9em;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}

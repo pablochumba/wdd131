@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Partly cloudy</title>
+  <desc id="desc">A yellow sun behind blue clouds.</desc>
+  <circle cx="23" cy="24" r="12" fill="#fcbf49"/>
+  <g fill="#f77f00">
+    <rect x="22" y="6" width="2" height="8" rx="1"/>
+    <rect x="22" y="34" width="2" height="8" rx="1"/>
+    <rect x="5" y="23" width="8" height="2" rx="1"/>
+    <rect x="33" y="23" width="8" height="2" rx="1"/>
+    <rect x="10.5" y="11.5" width="2" height="8" rx="1" transform="rotate(-45 11.5 15.5)"/>
+    <rect x="33.5" y="28.5" width="2" height="8" rx="1" transform="rotate(-45 34.5 32.5)"/>
+    <rect x="33.5" y="11.5" width="2" height="8" rx="1" transform="rotate(45 34.5 15.5)"/>
+    <rect x="10.5" y="28.5" width="2" height="8" rx="1" transform="rotate(45 11.5 32.5)"/>
+  </g>
+  <path fill="#7fb3d5" d="M22 49c-6.075 0-11-4.925-11-11 0-4.999 3.334-9.22 7.901-10.56C20.169 22.474 24.829 19 30.3 19c6.368 0 11.684 4.707 12.639 10.812C47.523 30.304 52 34.577 52 40c0 4.971-4.029 9-9 9H22z"/>
+  <path fill="#5f8fb3" d="M43 49H22c-6.075 0-11-4.925-11-11 0-1.275.225-2.496.621-3.636C13.194 39.186 17.997 43 23.7 43H45c3.875 0 7.314-1.783 9.599-4.568.258.767.401 1.588.401 2.432 0 4.971-4.029 9-9 9z" opacity=".45"/>
+</svg>

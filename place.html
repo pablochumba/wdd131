@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chile Country Page | WDD 131</title>
+    <meta name="description" content="A responsive country page about Chile featuring landscape details, weather information, and wind chill calculated with JavaScript.">
+    <meta name="author" content="Pablo Nicolas Chumba Perez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Chile</h1>
+        <p>Mountains, coastline, and vibrant city life in one long ribbon of South America.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/chile-hero-large.webp">
+                <img src="images/chile-hero-mobile.webp" alt="Santiago Chile Temple with the Andes Mountains in the background" width="400" height="260">
+            </picture>
+        </section>
+
+        <div class="content-grid">
+            <section class="info-card data-card">
+                <h2>Data</h2>
+                <dl>
+                    <div>
+                        <dt>Capital:</dt>
+                        <dd>Santiago</dd>
+                    </div>
+                    <div>
+                        <dt>Official Language:</dt>
+                        <dd>Spanish</dd>
+                    </div>
+                    <div>
+                        <dt>Population:</dt>
+                        <dd>19.6 million</dd>
+                    </div>
+                    <div>
+                        <dt>Area:</dt>
+                        <dd>756,102 km²</dd>
+                    </div>
+                    <div>
+                        <dt>Currency:</dt>
+                        <dd>Chilean Peso</dd>
+                    </div>
+                    <div>
+                        <dt>Time Zone:</dt>
+                        <dd>UTC-4 / UTC-3</dd>
+                    </div>
+                    <div>
+                        <dt>Famous For:</dt>
+                        <dd>The Andes, Patagonia, and Pacific coastlines</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="info-card weather-card">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather-cloud.svg" alt="Partly cloudy weather icon" width="72" height="72">
+                <dl>
+                    <div>
+                        <dt>Temperature:</dt>
+                        <dd><span id="temperature">8</span> °C</dd>
+                    </div>
+                    <div>
+                        <dt>Conditions:</dt>
+                        <dd>Partly Cloudy</dd>
+                    </div>
+                    <div>
+                        <dt>Wind:</dt>
+                        <dd><span id="windSpeed">14</span> km/h</dd>
+                    </div>
+                    <div>
+                        <dt>Wind Chill:</dt>
+                        <dd><span id="windChill">Calculating...</span></dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pablo Chumba - Rancagua, Chile - All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
