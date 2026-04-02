@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | WDD 131</title>
+    <meta name="description" content="Confirmation page for the WDD 131 product review form with a localStorage review counter.">
+    <meta name="author" content="Pablo Nicolas Chumba Perez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header class="site-header site-header--confirmation">
+        <p class="eyebrow">Submission Complete</p>
+        <h1>Thanks for Your Review</h1>
+        <p class="intro">Your feedback was received successfully.</p>
+    </header>
+
+    <main>
+        <section class="confirmation-card" aria-labelledby="confirmation-heading">
+            <h2 id="confirmation-heading">Review Submitted</h2>
+            <p>Your product review has been recorded for this assignment demo.</p>
+            <p class="review-count">Reviews completed on this browser: <strong id="reviewCount">0</strong></p>
+
+            <div class="summary" aria-labelledby="summary-heading">
+                <h3 id="summary-heading">Submission Summary</h3>
+                <dl>
+                    <div>
+                        <dt>Product</dt>
+                        <dd id="summaryProduct">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Rating</dt>
+                        <dd id="summaryRating">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Installation Date</dt>
+                        <dd id="summaryDate">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Features</dt>
+                        <dd id="summaryFeatures">None selected</dd>
+                    </div>
+                    <div>
+                        <dt>Name</dt>
+                        <dd id="summaryName">Anonymous</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <p><a class="return-link" href="form.html">Submit another review</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Pablo Chumba - Rancagua, Chile - All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
