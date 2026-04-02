@@ -1,0 +1,235 @@
+:root {
+    --teal: #a8e6cf;
+    --cream: #f5f0e6;
+    --white: #ffffff;
+    --gray: #333333;
+    --teal-dark: #4d8f7a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fdfb 100%);
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--teal) 0%, #dff8ed 100%);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid var(--teal-dark);
+}
+
+.brand-mark {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border: 3px solid var(--teal-dark);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.brand-mark__cupcake {
+    position: relative;
+    width: 32px;
+    height: 24px;
+    background: #dba39a;
+    border-radius: 0 0 12px 12px;
+    display: inline-block;
+}
+
+.brand-mark__cupcake::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 28px;
+    background: #fff5f7;
+    border: 2px solid var(--teal-dark);
+    border-bottom: none;
+    border-radius: 22px 22px 14px 14px;
+}
+
+.brand-mark__cupcake::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff8fab;
+    box-shadow: -12px 8px 0 #ffd166, 12px 8px 0 #a8e6cf;
+}
+
+.hero__logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.hero__tag {
+    margin: 0.5rem auto 0;
+    max-width: 40rem;
+    font-size: 1.05rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: var(--cream);
+    border: 1px solid #e4ddd0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--teal-dark);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    border-left: 6px solid var(--teal);
+    padding-left: 0.75rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+.color-grid,
+.type-grid,
+.wireframe-layout {
+    display: grid;
+    gap: 1rem;
+}
+
+.color-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.color-swatch {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+}
+
+.swatch {
+    height: 70px;
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    border: 1px solid #d9d9d9;
+}
+
+.swatch--teal {
+    background-color: var(--teal);
+}
+
+.swatch--cream {
+    background-color: var(--cream);
+}
+
+.swatch--white {
+    background-color: var(--white);
+}
+
+.swatch--gray {
+    background-color: var(--gray);
+}
+
+.font-heading {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-body {
+    font-family: "Roboto", sans-serif;
+}
+
+.wireframe-card {
+    background: var(--white);
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.wireframe {
+    background: #fafafa;
+    border: 2px dashed #a0a0a0;
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.phone {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #edf9f3;
+    border: 2px solid var(--teal-dark);
+    border-radius: 10px;
+    min-height: 70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+}
+
+.box.small {
+    min-height: 50px;
+}
+
+.hero-box {
+    min-height: 120px;
+}
+
+.desktop-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 700px) {
+    .wireframe-layout,
+    .type-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+}
