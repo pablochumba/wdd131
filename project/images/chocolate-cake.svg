@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">Chocolate cake illustration</title>
+<desc id="desc">An original illustration of a chocolate cake with ganache and cherries.</desc>
+<rect width="800" height="600" fill="#fbf3ec"/>
+<ellipse cx="400" cy="510" rx="230" ry="34" fill="#c8a18f" opacity="0.35"/>
+<rect x="235" y="240" width="330" height="170" rx="28" fill="#6f4518"/>
+<rect x="255" y="185" width="290" height="82" rx="30" fill="#8d5b34"/>
+<path d="M260 190h280c-10 36-18 72-40 86H300c-22-14-30-50-40-86z" fill="#4c2f16" opacity="0.9"/>
+<path d="M270 300c26 18 50 18 76 0s50-18 76 0 50 18 76 0 50-18 76 0" fill="none" stroke="#f6e2d1" stroke-width="16" stroke-linecap="round"/>
+<circle cx="320" cy="165" r="18" fill="#b82222"/>
+<circle cx="400" cy="145" r="18" fill="#b82222"/>
+<circle cx="480" cy="165" r="18" fill="#b82222"/>
+<rect x="275" y="412" width="250" height="22" rx="11" fill="#2f241f"/>
+</svg>

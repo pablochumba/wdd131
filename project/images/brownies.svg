@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">Brownies illustration</title>
+<desc id="desc">An original illustration of brownie squares with berries and chocolate drizzle.</desc>
+<rect width="800" height="600" fill="#fcf5ef"/>
+<ellipse cx="400" cy="510" rx="240" ry="34" fill="#ceb2a1" opacity="0.34"/>
+<rect x="190" y="220" width="420" height="210" rx="28" fill="#8c5a3c"/>
+<g fill="#5d3925">
+  <rect x="225" y="255" width="90" height="70" rx="10"/>
+  <rect x="345" y="255" width="90" height="70" rx="10"/>
+  <rect x="465" y="255" width="90" height="70" rx="10"/>
+  <rect x="225" y="340" width="90" height="70" rx="10"/>
+  <rect x="345" y="340" width="90" height="70" rx="10"/>
+  <rect x="465" y="340" width="90" height="70" rx="10"/>
+</g>
+<path d="M240 280c28-20 56-20 84 0s56 20 84 0 56-20 84 0 56 20 84 0" fill="none" stroke="#f2d1b8" stroke-width="8" stroke-linecap="round"/>
+<circle cx="290" cy="250" r="12" fill="#d96c6c"/>
+<circle cx="510" cy="360" r="12" fill="#d96c6c"/>
+<circle cx="390" cy="330" r="12" fill="#ffd166"/>
+</svg>

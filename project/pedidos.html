@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth Orders | Calculator and Request Form</title>
+    <meta name="description" content="Use the Sweet Tooth calculator and order form to estimate portions, build a dessert cart, and send a bakery order request.">
+    <meta name="author" content="Pablo Nicolas Chumba Perez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/site.js" defer></script>
+    <script type="module" src="scripts/pedidos.js"></script>
+</head>
+<body data-page="pedidos">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand__mark" aria-hidden="true">S</span>
+                <span class="brand__text"><strong>Sweet Tooth</strong><span>Bakery & celebration cakes</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="productos.html" data-page="productos">Productos</a></li>
+                <li><a href="eventos.html" data-page="eventos">Eventos</a></li>
+                <li><a href="pedidos.html" data-page="pedidos">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="panel">
+            <p class="eyebrow">Orders and planning</p>
+            <h1>Estimate your order and send a request</h1>
+            <p>This page helps visitors compare product size and price, keep a small cart, and submit their order details for pickup or delivery.</p>
+        </section>
+
+        <section class="order-layout">
+            <div class="order-panel">
+                <h2>Price calculator</h2>
+                <div class="form-grid two-up">
+                    <div class="form-group">
+                        <label for="orderProduct">Product <span aria-hidden="true">*</span></label>
+                        <select id="orderProduct" name="orderProduct" required>
+                            <option value="">Select a product...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="servings">Estimated servings <span aria-hidden="true">*</span></label>
+                        <input type="number" id="servings" name="servings" min="1" placeholder="15">
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button id="estimateButton" type="button">Calculate price</button>
+                    <button id="addToCart" class="button--secondary" type="button">Add to cart</button>
+                </div>
+                <div class="price-output" id="estimateOutput">
+                    <strong>Choose a product and number of servings</strong>
+                    <span class="notice">We will estimate the best option for your celebration.</span>
+                </div>
+
+                <h2>Order form</h2>
+                <form id="orderForm" class="form-grid" method="get" action="confirmacion.html">
+                    <div class="form-grid two-up">
+                        <div class="form-group">
+                            <label for="customerName">Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPhone">Phone or WhatsApp <span aria-hidden="true">*</span></label>
+                            <input type="tel" id="customerPhone" name="customerPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-grid two-up">
+                        <div class="form-group">
+                            <label for="pickupDate">Pickup or delivery date <span aria-hidden="true">*</span></label>
+                            <input type="date" id="pickupDate" name="pickupDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Service type <span aria-hidden="true">*</span></label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select one...</option>
+                                <option value="pickup">Pickup in Graneros</option>
+                                <option value="delivery">Delivery in Rancagua area</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cartSummary">Order summary</label>
+                        <input type="text" id="cartSummary" name="cartSummary" readonly value="No items yet">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special message or decoration notes</label>
+                        <textarea id="message" name="message" placeholder="Color ideas, names, themes, or delivery notes..."></textarea>
+                    </div>
+                    <input type="submit" value="Send order request">
+                </form>
+            </div>
+
+            <aside class="cart-panel" aria-labelledby="cartHeading">
+                <h2 id="cartHeading">Your cart</h2>
+                <p class="notice">Items stay saved in this browser while you plan the order.</p>
+                <ul class="cart-list" id="cartList"></ul>
+                <div class="total-line"><span>Total estimate</span><span id="cartTotal">CLP 0</span></div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; <span id="currentyear"></span> Pablo Chumba Perez | Rancagua, Chile</p>
+            <p><a href="referencias.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
+

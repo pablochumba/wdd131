@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">Celebration cake illustration</title>
+<desc id="desc">An original illustration of a decorated celebration cake with balloons.</desc>
+<rect width="800" height="600" fill="#fff8f2"/>
+<ellipse cx="400" cy="510" rx="240" ry="34" fill="#e6cdbb" opacity="0.35"/>
+<rect x="250" y="250" width="300" height="170" rx="26" fill="#fff1ea"/>
+<rect x="275" y="200" width="250" height="80" rx="24" fill="#f6c6d2"/>
+<path d="M285 312c22 14 42 14 64 0s42-14 64 0 42 14 64 0 42-14 64 0" fill="none" stroke="#dca86a" stroke-width="16" stroke-linecap="round"/>
+<circle cx="200" cy="150" r="34" fill="#ffd166"/>
+<circle cx="600" cy="135" r="34" fill="#93d9c3"/>
+<circle cx="645" cy="205" r="26" fill="#ff8fab"/>
+<line x1="200" y1="184" x2="220" y2="320" stroke="#8f4f3f" stroke-width="4"/>
+<line x1="600" y1="169" x2="560" y2="325" stroke="#8f4f3f" stroke-width="4"/>
+<line x1="645" y1="231" x2="600" y2="330" stroke="#8f4f3f" stroke-width="4"/>
+<rect x="300" y="422" width="200" height="20" rx="10" fill="#8f4f3f"/>
+</svg>

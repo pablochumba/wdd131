@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">Cupcakes illustration</title>
+<desc id="desc">An original illustration of decorated cupcakes in soft pastel tones.</desc>
+<rect width="800" height="600" fill="#fff8f2"/>
+<ellipse cx="400" cy="500" rx="240" ry="36" fill="#e4c7b3" opacity="0.38"/>
+<g transform="translate(150 190)">
+  <rect x="0" y="120" width="120" height="120" rx="18" fill="#d79c7f"/>
+  <path d="M-8 135c18-54 58-92 108-92s90 38 108 92" fill="#ffe7ee"/>
+  <circle cx="60" cy="58" r="12" fill="#ffd166"/>
+</g>
+<g transform="translate(340 170)">
+  <rect x="0" y="140" width="120" height="120" rx="18" fill="#d79c7f"/>
+  <path d="M-8 155c18-54 58-92 108-92s90 38 108 92" fill="#e7fff4"/>
+  <circle cx="60" cy="78" r="12" fill="#ff8fab"/>
+</g>
+<g transform="translate(530 195)">
+  <rect x="0" y="115" width="120" height="120" rx="18" fill="#d79c7f"/>
+  <path d="M-8 130c18-54 58-92 108-92s90 38 108 92" fill="#fff2dc"/>
+  <circle cx="60" cy="53" r="12" fill="#93d9c3"/>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">Dessert table illustration</title>
+<desc id="desc">An original illustration of a dessert table with assorted sweets.</desc>
+<rect width="800" height="600" fill="#fff7f3"/>
+<rect x="120" y="330" width="560" height="26" rx="13" fill="#8f4f3f"/>
+<rect x="150" y="356" width="500" height="120" rx="18" fill="#f1dccb"/>
+<g>
+  <rect x="190" y="250" width="80" height="80" rx="14" fill="#ffe8ee"/>
+  <circle cx="230" cy="235" r="24" fill="#ff8fab"/>
+</g>
+<g>
+  <rect x="310" y="230" width="80" height="100" rx="14" fill="#fff0de"/>
+  <circle cx="350" cy="215" r="22" fill="#ffd166"/>
+</g>
+<g>
+  <rect x="430" y="255" width="80" height="75" rx="14" fill="#eafbf3"/>
+  <circle cx="470" cy="240" r="24" fill="#93d9c3"/>
+</g>
+<g>
+  <rect x="550" y="235" width="80" height="95" rx="14" fill="#f7e6d5"/>
+  <circle cx="590" cy="220" r="22" fill="#d96c6c"/>
+</g>
+<ellipse cx="400" cy="510" rx="220" ry="30" fill="#ddc0ae" opacity="0.34"/>
+</svg>

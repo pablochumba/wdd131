@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth Products | Cakes, Cupcakes, Brownies</title>
+    <meta name="description" content="Browse Sweet Tooth cakes, cupcakes, brownies, and dessert trays with filters to find the best bakery option for your celebration.">
+    <meta name="author" content="Pablo Nicolas Chumba Perez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/site.js" defer></script>
+    <script type="module" src="scripts/productos.js"></script>
+</head>
+<body data-page="productos">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand__mark" aria-hidden="true">S</span>
+                <span class="brand__text"><strong>Sweet Tooth</strong><span>Bakery & celebration cakes</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="productos.html" data-page="productos">Productos</a></li>
+                <li><a href="eventos.html" data-page="eventos">Eventos</a></li>
+                <li><a href="pedidos.html" data-page="pedidos">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="panel">
+            <p class="eyebrow">Product catalog</p>
+            <h1>Choose a dessert style that fits your celebration</h1>
+            <p>Use the quick filters to focus on cakes, cupcakes, brownies, or special dessert assortments. Every option is built for sharing and simple event planning.</p>
+        </section>
+
+        <section>
+            <div class="filter-row" aria-label="Product filters">
+                <button class="filter-chip active" type="button" data-filter="all">All</button>
+                <button class="filter-chip" type="button" data-filter="cakes">Cakes</button>
+                <button class="filter-chip" type="button" data-filter="cupcakes">Cupcakes</button>
+                <button class="filter-chip" type="button" data-filter="brownies">Brownies</button>
+                <button class="filter-chip" type="button" data-filter="specials">Specials</button>
+            </div>
+            <p class="notice" id="productCount">Loading products...</p>
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; <span id="currentyear"></span> Pablo Chumba Perez | Rancagua, Chile</p>
+            <p><a href="referencias.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
+
